@@ -1,4 +1,5 @@
 ***4 BIT UP COUNTER***
+
  Objective
 The goal of this project is to build a simple 4-bit upcounter using an Arduino UNO and LEDs. The counter will increment from 0000 (decimal 0) to 1111 (decimal 15) in binary, displaying each binary number using 4 LEDs. This is a great introductory project for learning digital electronics and binary number systems.
 | Component     | Quantity | Description                                        |
