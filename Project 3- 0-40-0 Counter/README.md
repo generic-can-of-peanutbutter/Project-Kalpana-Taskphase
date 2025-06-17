@@ -6,7 +6,8 @@ This Arduino project displays a number counting from 0 to 40 and then back to 0 
 
 - Arduino Uno (or compatible board)
 - 2 x Common Cathode 7-Segment Displays
-- 9 x 220Ω resistors 
+- 9 x 220Ω resistors
+- Jumper wires
 
 Circuit Connections-
 
