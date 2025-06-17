@@ -6,7 +6,7 @@ The goal of this project is to build a simple 4-bit upcounter using an Arduino U
 | ------------- | -------- | -------------------------------------------------- |
 | Arduino UNO   | 1        | Microcontroller board                              |
 | Red LED       | 4        | Used to display binary count                       |
-| 220Ω Resistor | 4        | Limits current to protect the LEDs                 |
+| 220Ω Resistor | 4       | Limits current to protect the LEDs                 |
 | Jumper Wires  | 8+       | For electrical connections                         |
 | Breadboard    | Optional | For easier prototyping (not used in current setup) |
 
