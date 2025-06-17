@@ -1,6 +1,8 @@
 This repository contains a set of beginner-friendly electronics projects developed using Arduino Uno. Each project demonstrates core concepts like digital output, PWM, counters, and 7-segment display multiplexing. The tasks were completed as part of the Electronics & Automation domain of Project Kalpana.
 
 📁 Project Overview
+
+
 1️⃣ LED Brightness Control using Arduino
 Objective: Control the brightness of an LED using a button, cycling through three levels – low, medium, and high.
 
