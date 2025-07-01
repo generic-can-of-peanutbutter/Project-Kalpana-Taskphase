@@ -1,4 +1,4 @@
-Servo Motor Angle Sweep from 0° to X° and Back using Arduino in Tinkercad.
+Aim- Servo Motor Angle Sweep from 0° to X° and Back using Arduino in Tinkercad.
 
 This project demonstrates how to control a servo motor using an Arduino Uno in Tinkercad. The servo motor rotates from 0° to a specified angle X°, pauses briefly, and returns smoothly back to 0°. This is commonly used in robotic arms, doors, and automation systems.
 
