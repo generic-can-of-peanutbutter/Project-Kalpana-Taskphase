@@ -1,1 +1,36 @@
+#include <Servo.h>
+
+Servo myServo;     // Create servo object
+int angle = 0;      // Variable to store current angle
+
+void setup() {
+  myServo.attach(9);  // Attach servo signal wire to pin 9
+}
+
+void loop() {
+  int X = 90;  // User-defined angle (too high!)
+
+  // Limit X to maximum of 180 degrees
+  if (X > 180) {
+    X = 180;
+  }
+
+  // Rotate from 0 to X
+  for (angle = 0; angle <= X; angle++) {
+    myServo.write(angle);
+    delay(15); // Smooth movement
+  }
+
+  delay(500); // Pause at max position
+
+  // Rotate back from X to 0
+  for (angle = X; angle >= 0; angle--) {
+    myServo.write(angle);
+    delay(15);
+  }
+
+  delay(1000); // Pause before repeating
+}
+
+
 
