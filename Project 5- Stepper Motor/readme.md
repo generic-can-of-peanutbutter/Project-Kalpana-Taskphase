@@ -12,7 +12,6 @@ Components-
 | ---------------------- | -------- |
 | ESP32 Dev Board        | 1        |
 | 28BYJ-48 Stepper Motor | 1        |
-| ULN2003 Driver Module  | 1        |
 | Jumper Wires           | 6        |
 | USB Cable (simulated)  | 1        |
 
