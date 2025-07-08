@@ -89,4 +89,16 @@ Number is split into tens and ones, shown alternately with a small delay.
 Uses digitalWrite() to multiplex the digits quickly enough to appear constant.
 
 
+4️⃣ Servo Motor Angle Sweep from 0° to X° and Back using Arduino in Tinkercad.
 
+This project demonstrates how to control a servo motor using an Arduino Uno in Tinkercad. The servo motor rotates from 0° to a specified angle X°, pauses briefly, and returns smoothly back to 0°. This is commonly used in robotic arms, doors, and automation systems.
+
+Components
+Arduino Uno x	1
+Servo Motor	x 1
+Breadboard	x 1 (optional)
+Jumper Wires	x 3
+
+
+5️⃣
+     
