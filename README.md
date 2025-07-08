@@ -110,6 +110,14 @@ ESP32 Dev Board x 1
 Jumper Wires x 4
 USB Cable x 1
 
-6️⃣ 
+
+6️⃣ Arduino HT16K33 7-Segment Counter
+This project uses an HT16K33-based 7-segment display to count from 0 to 40 and then back to 0 using an Arduino.
+
+Components-
+Arduino UNO (or compatible board)
+HT16K33 4-digit 7-segment display (e.g. Adafruit 0.56" 4-Digit 7-Segment Display w/I2C Backpack)
+Jumper wires
+Breadboard (optional)
 
      
