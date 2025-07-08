@@ -100,5 +100,15 @@ Breadboard	x 1 (optional)
 Jumper Wires	x 3
 
 
-5️⃣
+5️⃣ ESP32 Stepper Motor Control with Custom Rotations, Direction, and Speed
+
+This project demonstrates how to control a 28BYJ-48 stepper motor using an ESP32 microcontroller and a ULN2003 driver module. The motor is programmed to: Rotate for a configurable number of rotations In a specific direction (clockwise or counter-clockwise) At a given speed (RPM) This simulation runs on Wokwi.
+
+Components-
+ESP32 Dev Board x 1
+28BYJ-48 Stepper Motor x 1
+Jumper Wires x 4
+USB Cable x 1
+
+6️⃣ 
      
