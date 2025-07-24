@@ -45,5 +45,6 @@ Make sure to install the following libraries via the **Arduino Library Manager**
 5. Watch the display count from 0 → 40 → 0 in a loop!
 
 Simulation-
-https://www.tinkercad.com/things/h5ieYjn5Lnx-glorious-snaget-albar/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=VuI9vMjuCC23srJum4rTrZ5KB4G0uaQiLnnUjFR17zo
+
+[Click Here](https://www.tinkercad.com/things/h5ieYjn5Lnx-glorious-snaget-albar/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=VuI9vMjuCC23srJum4rTrZ5KB4G0uaQiLnnUjFR17zo)
 
