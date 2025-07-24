@@ -1,40 +1,70 @@
-Aim- Servo Motor Angle Sweep from 0° to X° and Back using Arduino in Tinkercad.
+🚀 Servo Motor Angle Sweep using Arduino 
+This project demonstrates how to control a servo motor using an Arduino Uno in Tinkercad. The servo rotates from 0° to a specified angle X°, pauses, and then returns smoothly back to 0°. This type of motion is commonly used in robotic arms, door openers, and automation mechanisms.
 
-This project demonstrates how to control a servo motor using an Arduino Uno in Tinkercad. The servo motor rotates from 0° to a specified angle X°, pauses briefly, and returns smoothly back to 0°. This is commonly used in robotic arms, doors, and automation systems.
+🧾 Objective
+Control a servo motor to sweep from 0° to X° and back to 0° using Arduino.
+Understand servo angle positioning with the Servo.h library.
 
-| Component    | Quantity     |
-| ------------ | ------------ |
-| Arduino Uno  | 1            |
-| Servo Motor  | 1            |
-| Breadboard   | 1 (optional) |
-| Jumper Wires | 3            |
+🔩 Components Required
+| Component    | Quantity       |
+| ------------ | -------------- |
+| Arduino Uno  | 1              |
+| Servo Motor  | 1              |
+| Breadboard   | 1 *(optional)* |
+| Jumper Wires | 3              |
 
+🔌 Circuit Connections
+| Servo Motor Wire       | Connects To       |
+| ---------------------- | ----------------- |
+| 🟥 Red (VCC)           | Arduino **5V**    |
+| ⬛ Brown/Black (GND)    | Arduino **GND**   |
+| 🟧 Orange/Yellow (PWM) | Arduino **Pin 9** |
 
-Connections-
-| Servo Motor Wire           | Connects To       |
-| -------------------------- | ----------------- |
-| *Red* (Vcc)              | Arduino *5V*    |
-| *Brown/Black* (GND)      | Arduino *GND*   |
-| *Orange/Yellow* (Signal) | Arduino *Pin 9* |
+⚙️ How It Works
+The Servo.h library enables precise control of servo motors.
+The servo is attached to pin 9 using myServo.attach(9).
+The program:
+Sweeps the servo from 0° to X°.
+Pauses briefly at X°.
+Returns from X° to 0°.
+delay(15) is used for smooth motion.
+The loop repeats infinitely.
 
+🧠 Arduino Code
+```
+#include <Servo.h>
 
+Servo myServo;  
+int angle = 0;    
 
-⚙ How It Works
-#include <Servo.h> loads the library to control the servo motor.
+void setup() {
+  myServo.attach(9);  // Attach servo signal wire to pin 9
+}
 
-myServo.attach(9) connects the servo to digital pin 9.
+void loop() {
+  int X = 90;  // User defined angle 
 
-The servo:
+  if (X > 180) {
+    X = 180;
+  }
 
-Rotates from 0° to X° using a for loop.
+  // Rotate from 0 to X
+  for (angle = 0; angle <= X; angle++) {
+    myServo.write(angle); // Update servo angle
+    delay(15);
+  }
 
-Pauses at X.
+  delay(500); // Pause at X°
 
-Rotates back from X° to 0°.
+  // Rotate back from X to 0
+  for (angle = X; angle >= 0; angle--) {
+    myServo.write(angle);
+    delay(15);
+  }
 
-The delay(15) gives time for the servo to reach the angle smoothly.
-
-The loop runs forever.
+  delay(1000); // Pause before next cycle
+}
+```
 
 Simulation Link-
-https://www.tinkercad.com/things/czv62yr0VAm-servo/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=EEhVH_v-vsOW-KkSzvtoMpPi-h7yPVmf1ncIh2To780
+[Click Here](https://www.tinkercad.com/things/czv62yr0VAm-servo/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=EEhVH_v-vsOW-KkSzvtoMpPi-h7yPVmf1ncIh2To780)
