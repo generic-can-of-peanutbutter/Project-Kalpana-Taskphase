@@ -3,10 +3,12 @@
 This project demonstrates how to control a servo motor using an Arduino Uno in Tinkercad. The servo rotates from 0° to a specified angle X°, pauses, and then returns smoothly back to 0°. This type of motion is commonly used in robotic arms, door openers, and automation mechanisms.
 
 🧾 Objective
+
 Control a servo motor to sweep from 0° to X° and back to 0° using Arduino.
 Understand servo angle positioning with the Servo.h library.
 
 🔩 Components Required
+
 | Component    | Quantity       |
 | ------------ | -------------- |
 | Arduino Uno  | 1              |
@@ -15,6 +17,7 @@ Understand servo angle positioning with the Servo.h library.
 | Jumper Wires | 3              |
 
 🔌 Circuit Connections
+
 | Servo Motor Wire       | Connects To       |
 | ---------------------- | ----------------- |
 | 🟥 Red (VCC)           | Arduino **5V**    |
@@ -22,6 +25,7 @@ Understand servo angle positioning with the Servo.h library.
 | 🟧 Orange/Yellow (PWM) | Arduino **Pin 9** |
 
 ⚙️ How It Works
+
 The Servo.h library enables precise control of servo motors.
 The servo is attached to pin 9 using myServo.attach(9).
 The program:
@@ -32,6 +36,7 @@ delay(15) is used for smooth motion.
 The loop repeats infinitely.
 
 🧠 Arduino Code
+
 ```
 #include <Servo.h>
 
@@ -68,4 +73,5 @@ void loop() {
 ```
 
 Simulation Link-
+
 [Click Here](https://www.tinkercad.com/things/czv62yr0VAm-servo/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=EEhVH_v-vsOW-KkSzvtoMpPi-h7yPVmf1ncIh2To780)
