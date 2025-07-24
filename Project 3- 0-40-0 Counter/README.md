@@ -1,10 +1,17 @@
 🔢 2-Digit 7-Segment Counter (0 to 40 and Back)
+
 This Arduino project demonstrates how to count from 0 to 40 and back to 0 using two common cathode 7-segment displays and multiplexing. The project teaches binary-to-decimal conversion, display multiplexing, and timing using Arduino.
 
+
+
 🎯 Objective
+
 To display a number that continuously increments from 00 to 40 and then decrements back to 00 using two 7-segment displays, controlled efficiently through multiplexing with Arduino Uno.
 
+
+
 🔧 Components Required
+
 | Component                        | Quantity | Description                     |
 | -------------------------------- | -------- | ------------------------------- |
 | Arduino Uno (or compatible)      | 1        | Microcontroller board           |
@@ -13,7 +20,10 @@ To display a number that continuously increments from 00 to 40 and then decremen
 | Jumper Wires                     | 10+      | For electrical connections      |
 | Breadboard (optional)            | 1        | For clean prototyping           |
 
+
+
 🛠️ Circuit Connections
+
 | Segment | Arduino Pin |
 | ------- | ----------- |
 | A       | 2           |
@@ -25,20 +35,29 @@ To display a number that continuously increments from 00 to 40 and then decremen
 | G       | 8           |
 💡 All segment pins are shared between the two displays.
 
+
+
 🔌 Digit Control (Common Cathode)
+
 | Digit | Arduino Pin |
 | ----- | ----------- |
 | Ones  | 9           |
 | Tens  | 10          |
 Only one display is active at a time to save on I/O pins—this is called multiplexing.
 
+
+
 ⚙️ Working Principle
+
 The counter starts at 0, increments up to 40, and then counts down back to 0.
 Each number is split into tens and ones digits.
 The digits are shown one after the other very fast (every 5 ms), creating the illusion that both are on at the same time.
 Multiplexing is used to control two displays using only 7 segment pins and 2 control pins.
 
+
+
 📄 Arduino Code
+
 ```// Segment pins (A-G)
 const int segmentPins[7] = {2, 3, 4, 5, 6, 7, 8};
 
@@ -106,7 +125,10 @@ void showDigit(int digit) {
   }
 }
 ```
+
+
 🧠 Code Breakdown
+
 | Code Segment                   | Purpose                                  |
 | ------------------------------ | ---------------------------------------- |
 | `digits[10][7]`                | Segment patterns for digits 0–9          |
@@ -118,5 +140,8 @@ void showDigit(int digit) {
 | `if (count <= 0) up = true;`   | Reverse again when reaching 0            |
 
 
+
+
 TinkerCad simulation-
+
 [Click Here](https://www.tinkercad.com/things/4TbkbEZ0yJr-1-40-counter/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=6PwEtH3PXzsFTEIUenwJ8GPBYpLZ3RQRwTf2-e6AbQo)
