@@ -1,14 +1,21 @@
 💡 LED Brightness Control using Arduino
+
 This project demonstrates how to cycle an LED through three brightness levels—Low, Medium, and High—using a push button. Each button press increases the brightness, and the cycle restarts after the highest level.
 
+
+
 🔧 Components Used
+
 1 × Arduino Uno
 1 × LED
 1 × Push button
 2 × 1KΩ resistors (used for pull-down configuration, if needed externally)
 Jumper wires
 
+
+
 🛠️ Circuit Description
+
 LED:
 Anode (longer leg) → Connected to PWM Pin 9 via a 220Ω resistor
 Cathode (shorter leg) → Connected to GND
@@ -21,7 +28,10 @@ Internal pull-up resistor is enabled in the code (INPUT_PULLUP), so no external 
 
 ⚠️ Ensure that the button connects to GND when pressed to work correctly with INPUT_PULLUP.
 
+
+
 ⚙️ Working Principle
+
 The LED brightness changes on each button press as follows:
 First Press → Low brightness
 Second Press → Medium brightness
@@ -30,7 +40,10 @@ Fourth Press → Back to Low
 
 Brightness is controlled using the analogWrite() function on the PWM-enabled pin.
 
+
+
 🧠 Code Explanation
+
 The Arduino code uses a counter variable (count) to track the brightness level. Each button press increments this counter and wraps it back to 0 after reaching 2. A debounce delay ensures stable operation.
 | Line / Block                        | Description                                                             |
 | ----------------------------------- | ----------------------------------------------------------------------- |
@@ -43,7 +56,10 @@ The Arduino code uses a counter variable (count) to track the brightness level. 
 | `analogWrite(ledPin, value)`        | Sends PWM signal to control brightness                                  |
 
 
+
+
 📄 Code Overview
+
 ```cpp
 const int ledPin = 9;       // LED connected to PWM pin 9
 const int buttonPin = 11;   // Button connected to pin 11
@@ -78,6 +94,8 @@ void loop() {
 }
 ```
 
+
+
 Tinkercad Simulation
-You can simulate and test the circuit using Tinkercad:
+
 [Click Here](https://www.tinkercad.com/things/bKjHkQrKNRq-led-brightness-control/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=7MSoEUGcPuuRr2TDVYyR6ZM_01KdrPbgD89l3kFken8)
